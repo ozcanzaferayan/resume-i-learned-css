@@ -1,113 +1,122 @@
+.trail {
+    /* className for the trail elements */
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 3px;
+    background: teal;
+}
+
 .clear {
-  clear: both;
+    clear: both;
 }
 
 #headshot img {
-  animation: out 3s;
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-right: 10px;
-  position: absolute;
+    animation: out 3s;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+    position: absolute;
 }
 
 #headshot img:hover {
-  animation: in 3s forwards;
+    animation: in 3s forwards;
 }
 
 #name {
-  float: left;
-  margin-left: 120px;
+    float: left;
+    margin-left: 120px;
 }
 
 #contactDetails {
-  float: right;
+    float: right;
 }
 
 .section-title {
-  float: left;
+    float: left;
 }
 
 .section-content {
-  float: right;
-  width: 72.5%;
+    float: right;
+    width: 72.5%;
 }
 
 .topLink {
-  text-align: center;
-  padding-bottom: 20px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .topLink a {
-  color: #bbb;
-  text-decoration: none;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
-  -ms-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+    color: #bbb;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 .topLink a:hover {
-  color: #888;
+    color: #888;
 }
 
 @keyframes in {
-  from {
-    transform: rotate(0deg) scale(1);
-    left: 8px;
-    top: 8px;
-  }
-  to {
-    transform: rotate(3500deg) scale(3);
-    left: 100px;
-    top: 100px;
-  }
+    from {
+        transform: rotate(0deg) scale(1);
+        left: 8px;
+        top: 8px;
+    }
+    to {
+        transform: rotate(3500deg) scale(3);
+        left: 100px;
+        top: 100px;
+    }
 }
 
 @keyframes out {
-  0% {
-    transform: rotate(3500deg) scale(3);
-    left: 100px;
-    top: 100px;
-  }
-  100% {
-    transform: rotate(0deg) scale(1);
-    left: 8px;
-    top: 8px;
-  }
+    0% {
+        transform: rotate(3500deg) scale(3);
+        left: 100px;
+        top: 100px;
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+        left: 8px;
+        top: 8px;
+    }
 }
 
 body {
-  animation: color-change 2s infinite;
+    animation: color-change 2s infinite;
 }
 @keyframes color-change {
-  0% {
-    background-color: red;
-  }
-  12.5% {
-    background: orange;
-  }
-  25% {
-    background: yellow;
-  }
-  37.5% {
-    background: green;
-  }
-  50% {
-    background: blue;
-  }
-  62.5% {
-    background: indigo;
-  }
-  75% {
-    background: violet;
-  }
-  87.5% {
-    background: white;
-  }
-  100% {
-    background: red;
-  }
+    0% {
+        background-color: red;
+    }
+    12.5% {
+        background: orange;
+    }
+    25% {
+        background: yellow;
+    }
+    37.5% {
+        background: green;
+    }
+    50% {
+        background: blue;
+    }
+    62.5% {
+        background: indigo;
+    }
+    75% {
+        background: violet;
+    }
+    87.5% {
+        background: white;
+    }
+    100% {
+        background: red;
+    }
 }
